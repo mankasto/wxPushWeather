@@ -13,7 +13,7 @@ import os
 start_date = os.environ['START_DATE']
 # 和风天气key, host
 appKey = os.environ['APP_KEY']
-appHost = os.environ['APP_Host']
+appHost = os.environ['APP_HOST']
 # 生日
 birthday = os.environ['BIRTHDAY']
 # 微信公众号的appid和app_secret
