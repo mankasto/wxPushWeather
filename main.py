@@ -41,6 +41,7 @@ params = {
     "key": appKey,
     "location": city
 }
+print(f"{appKey=}, {city=}")
 
 # 根据城市名查找地理位置
 url = "https://geoapi.qweather.com/v2/city/lookup"
