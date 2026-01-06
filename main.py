@@ -12,7 +12,7 @@ import os
 # 哪天在一起的
 start_date = os.environ['START_DATE']
 # 和风天气key
-appKey = os.environ['APP_KEY']
+appKey = "490dd3044c4f45fa8c05f8d73eedb659" # os.environ['APP_KEY']
 # 生日
 birthday = os.environ['BIRTHDAY']
 # 微信公众号的appid和app_secret
