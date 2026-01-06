@@ -34,20 +34,6 @@ today = datetime.now()
 today_date = today.strftime("%Y年%m月%d日")
 
 
-# 构建请求体
-headers = {"Content-Type": "application/x-www-form-urlencoded"}
-params = {
-    "key": appKey,
-    "location": city
-}
-
-# 根据城市名查找地理位置
-url = "https://geoapi.qweather.com/v2/city/lookup"
-resp_json = json.loads(requests.get(url, params, headers=headers).text)
-city_id = resp_json["location"][0]["id"]
-params["location"] = city_id
-
-
 # 在一起多天计算
 def get_count():
     delta = today - datetime.strptime(start_date, "%Y-%m-%d")
