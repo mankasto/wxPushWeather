@@ -38,6 +38,7 @@ jobs:
 
     env:
       APP_KEY: ${{ secrets.APP_KEY }}
+      APP_HOST: ${{ secrets.APP_HOST }}
       APP_ID: ${{ secrets.APP_ID }}
       APP_SECRET: ${{ secrets.APP_SECRET }}
       TEMPLATE_ID_DAY: ${{ secrets.TEMPLATE_ID_DAY }}
